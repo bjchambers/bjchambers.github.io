@@ -53,7 +53,7 @@
       <article class="role">
         <header>
           <h3>DataStax <span class="title">— CTO, ML</span></h3>
-          <span class="dates">Jan 2023 – Aug 2025</span>
+          <span class="dates">Jan 2023 – Aug 2025 · acquired by IBM</span>
         </header>
         <ul>
           <li>
@@ -77,12 +77,15 @@
         </header>
         <ul>
           <li>
-            Founded Kaskada to build a query engine for real-time ML. Designed
-            <strong>Timestreams</strong> — a columnar abstraction over
-            temporally-ordered event data, exposed as a Python DSL — that
-            unified historical training-data generation with real-time feature
-            serving, eliminated data leakage by construction, and allowed
-            feature evaluation at arbitrary, data-dependent points in time.
+            Founded Kaskada to simplify feature engineering from event-based
+            data. Iteration with users drove the product from a managed
+            service with a custom DSL to an open-source Python library over
+            Rust and Apache Arrow, anchored by <strong>Timestreams</strong> —
+            a columnar abstraction over temporally-ordered events that
+            unified historical training-data generation with real-time
+            feature serving, eliminated data leakage by construction, and
+            allowed feature evaluation at arbitrary, data-dependent points
+            in time.
           </li>
           <li>
             Contributed significantly to the search for product-market fit —
@@ -195,12 +198,16 @@
       <ul class="projects">
         <li>
           <a href="https://stepflow.org/blog/langflow-poc/">Langflow on
-          StepFlow</a> — Oct 2025. Converting Langflow workflows to StepFlow
-          for automatic parallelization and distributed execution.
+          StepFlow</a> — Oct 2025. Proof-of-concept running existing Langflow
+          workflows unmodified on StepFlow with automatic parallelization and
+          cross-machine execution — the concrete validation of StepFlow's
+          "drop-in runtime for any GenAI framework" thesis.
         </li>
         <li>
           <a href="https://stepflow.org/blog/announcing-stepflow">Announcing
-          StepFlow</a> — Aug 2025. Co-authored with Nate McCall.
+          StepFlow</a> — Aug 2025. Public launch of StepFlow as an open
+          protocol and runtime for durable, distributed, multi-language GenAI
+          workflows; co-authored with Nate McCall.
         </li>
       </ul>
 
@@ -209,21 +216,25 @@
         <li>
           <a href="https://thenewstack.io/scaling-knowledge-graphs-by-eliminating-edges/">Scaling
           Knowledge Graphs by Eliminating Edges</a> — <em>The New Stack</em>,
-          Jul 2024.
+          Jul 2024. Replaces materialized graph edges with per-node link
+          metadata, dropping node-insertion cost from quadratic to linear and
+          making content-centric graph RAG tractable at document-collection
+          scale.
         </li>
         <li>
           <a href="https://thenewstack.io/better-llm-integration-with-content-centric-knowledge-graphs/">Better
           LLM Integration with Content-Centric Knowledge Graphs</a> —
-          <em>The New Stack</em>, Jun 2024.
-        </li>
-        <li>
-          <a href="https://dewykb.github.io/blog/langchain-python-cli/">Building
-          a Question-Answering CLI with LangChain and Dewy</a> — Mar 2024.
+          <em>The New Stack</em>, Jun 2024. Challenges the entity-extraction
+          orthodoxy in graph RAG with a simpler content-centric design that
+          defers concept resolution to the LLM at query time — the conceptual
+          foundation for DataStax's Graph RAG library.
         </li>
         <li>
           <a href="https://dewykb.github.io/blog/extraction-matters-most/">Extraction
-          Matters Most</a> — Feb 2024. Which RAG techniques actually move the
-          needle.
+          Matters Most</a> — Feb 2024. Empirical study showing that
+          document-extraction quality dominates chunking and retrieval tuning
+          as a RAG performance lever — redirecting where practitioners should
+          invest effort.
         </li>
       </ul>
 
@@ -239,11 +250,27 @@
         </li>
         <li>
           <a href="https://kaskada.io/blog/posts/2023-11-06-four-pillars-of-realtime-ai.html">Four
-          Pillars of Real-Time Generative AI</a> — Nov 2023.
+          Pillars of Real-Time Generative AI</a> — Nov 2023. A framework
+          identifying four capabilities — monitor, decide, act, improve —
+          that LLM agents need to act continuously on streaming events
+          rather than only respond to prompts.
+        </li>
+        <li>
+          <a href="https://web.archive.org/web/20230924104136/kaskada.io/2023/05/09/introducing-timelines-part-1.html">Introducing
+          Timelines (Part 1): an Evolution in Stream Processing Abstraction</a>
+          — May 2023. Introduces Timelines as the next step in a
+          stream-processing abstraction lineage from Kafka through Flink — a
+          multiset ordered by time and grouped by entity that makes temporal
+          queries expressible where relational abstractions fall short;
+          co-authored with Therapon Skoteiniotis
+          (<a href="https://web.archive.org/web/20230924100753/https://kaskada.io/2023/05/25/introducing-timelines-part-2.html">Part
+          2</a> covers how the query language is built on the abstraction).
         </li>
         <li>
           <a href="https://kaskada.io/blog/posts/2023-03-28-announcing-kaskada-oss.html">Announcing
-          Kaskada OSS</a> — Mar 2023.
+          Kaskada OSS</a> — Mar 2023. Public release of the Kaskada engine
+          under Apache 2.0, bringing its temporal columnar computation model
+          to the open-source community.
         </li>
         <li>
           <a href="https://kaskada.io/guide/">Kaskada User Guide</a> —
