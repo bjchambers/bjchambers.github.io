@@ -21,12 +21,12 @@
 
     <section id="summary">
       <p class="summary">
-        Principal engineer with 15+ years building data infrastructure and
-        distributed systems, as both IC and tech lead. Currently at IBM building
-        open-source infrastructure for GenAI workflows. Founded Kaskada — a
-        query engine for real-time ML over event streams — and led it through
-        acquisition by DataStax. Founding PMC member of Apache Beam, where I
-        co-designed the streaming model (windowing, triggers) at Google.
+        Principal engineer in data infrastructure and distributed systems.
+        Founded Kaskada, a real-time ML query engine acquired by DataStax in
+        2023. Founding PMC member of Apache Beam and co-designer of its
+        streaming model (windowing, triggers) while at Google. Now at IBM
+        building StepFlow, open-source durable orchestration for GenAI
+        workflows.
       </p>
     </section>
 
@@ -42,16 +42,17 @@
           <li>
             Building <a href="https://github.com/stepflow-ai/stepflow">StepFlow</a>,
             an open-source durable orchestrator for GenAI workflows from any
-            language or framework. Provides more efficient, distributed
-            execution of Langflow and other flow-based systems, with isolated
-            step execution via Firecracker microVMs.
+            language or framework. Runs Langflow and other flow-based systems
+            ~10–20% faster on a single machine, with horizontal scaling across
+            machines and isolated step execution via Firecracker microVMs for
+            stronger security.
           </li>
         </ul>
       </article>
 
       <article class="role">
         <header>
-          <h3>DataStax <span class="title">— ML CTO</span></h3>
+          <h3>DataStax <span class="title">— CTO, ML</span></h3>
           <span class="dates">Jan 2023 – Aug 2025</span>
         </header>
         <ul>
@@ -76,13 +77,22 @@
         </header>
         <ul>
           <li>
-            Founded Kaskada to build temporal, columnar feature engineering for
-            real-time ML — a query engine and language purpose-built for
-            event-time reasoning over streams of events.
+            Founded Kaskada to build a query engine for real-time ML. Designed
+            <strong>Timestreams</strong> — a columnar abstraction over
+            temporally-ordered event data, exposed as a Python DSL — that
+            unified historical training-data generation with real-time feature
+            serving, eliminated data leakage by construction, and allowed
+            feature evaluation at arbitrary, data-dependent points in time.
           </li>
           <li>
-            Led engineering through product, fundraising, and acquisition by
-            DataStax in 2023.
+            Contributed significantly to the search for product-market fit —
+            ongoing customer conversations, iterating on product packaging and
+            go-to-market strategy, and aligning the engine's capabilities with
+            what customers would actually pay for.
+          </li>
+          <li>
+            Raised two rounds of funding; scaled the team to ~20 people at
+            peak. Led engineering through acquisition by DataStax in 2023.
           </li>
         </ul>
       </article>
@@ -111,73 +121,41 @@
           </li>
         </ul>
 
-        <h4 class="subrole">Cross Media Panels · 2013 – 2015</h4>
+        <h4 class="subrole">Earlier at Google · 2009 – 2015</h4>
         <ul>
           <li>
-            Tech lead for Android and iOS metering applications and the backend
-            / API that ingested their data. Built dashboards for panel
-            membership and participation.
-          </li>
-        </ul>
-
-        <h4 class="subrole">DoubleClick BidManager · 2011 – 2013</h4>
-        <ul>
-          <li>
-            Scaled the reporting pipeline by moving raw-data aggregation from
-            client to server; eliminated distributed state caches by making the
-            backend fast enough not to need them.
-          </li>
-        </ul>
-
-        <h4 class="subrole">DoubleClick AdPlanner · 2009 – 2011</h4>
-        <ul>
-          <li>
-            Led a two-person team rebuilding the UI as a wizard-driven flow.
-            Contributed PrivateModule support upstream to Gin (GWT's Guice
-            equivalent) and rewrote the browser↔server RPC layer to support
-            deterministic frontend tests.
+            Tech-lead roles across three teams: Cross Media Panels (2013–2015,
+            Android/iOS metering apps and ingestion backend), DoubleClick
+            BidManager (2011–2013, scaled the reporting pipeline and removed
+            the need for distributed state caches by making the backend fast
+            enough without them), and DoubleClick AdPlanner (2009–2011,
+            wizard-driven UI rebuild with upstream GWT/Gin contributions).
           </li>
         </ul>
       </article>
 
       <article class="role">
         <header>
-          <h3>Northeastern University <span class="title">— Research Assistant</span></h3>
-          <span class="dates">Jan 2008 – May 2009</span>
+          <h3>Earlier</h3>
+          <span class="dates">2001 – 2009</span>
         </header>
         <ul>
           <li>
-            Implemented a new Boolean-logic-to-CNF translation (OCaml, then
-            C++ for ~10× speedup) that produced smaller CNFs and improved SAT
-            solver performance. Published at DATE 2009.
+            <strong>Northeastern University</strong>, Research Assistant
+            (2008–2009): Boolean-logic-to-CNF translation (OCaml then C++ for
+            ~10× speedup) that produced smaller CNFs and improved SAT solver
+            performance.
           </li>
-        </ul>
-      </article>
-
-      <article class="role">
-        <header>
-          <h3>Diagis <span class="title">— Senior Researcher</span></h3>
-          <span class="dates">Sep 2006 – Aug 2007</span>
-        </header>
-        <ul>
           <li>
-            Built a Haskell analysis over LLVM bytecode to detect security and
-            memory errors in C/C++. Published at VMCAI 2007.
+            <strong>Diagis</strong>, Senior Researcher (2006–2007): Haskell
+            static analysis over LLVM bytecode to detect memory and security
+            errors in C/C++.
           </li>
-        </ul>
-      </article>
-
-      <article class="role">
-        <header>
-          <h3>Applied Systems Intelligence <span class="title">— Junior Engineer</span></h3>
-          <span class="dates">2001 – 2006</span>
-        </header>
-        <ul>
           <li>
-            Maintained and extended a ~100k-line cross-platform C++ library for
-            building intelligent agents; designed an agent-reasoning log and
-            viewer; prototyped a control system integrating an intelligent agent
-            with an autonomous lawn mower.
+            <strong>Applied Systems Intelligence</strong>, Junior Engineer
+            (2001–2006): maintained a ~100k-line cross-platform C++ library
+            for intelligent agents; prototyped an agent-controlled autonomous
+            lawn mower.
           </li>
         </ul>
       </article>
@@ -206,6 +184,116 @@
           <a href="https://beam.apache.org/">Apache Beam</a>
           — founding PMC member; designed windowing/triggers and the state/timers
           execution layer.
+        </li>
+      </ul>
+    </section>
+
+    <section id="writing">
+      <h2>Talks &amp; Writing</h2>
+
+      <h4 class="subrole">StepFlow</h4>
+      <ul class="projects">
+        <li>
+          <a href="https://stepflow.org/blog/langflow-poc/">Langflow on
+          StepFlow</a> — Oct 2025. Converting Langflow workflows to StepFlow
+          for automatic parallelization and distributed execution.
+        </li>
+        <li>
+          <a href="https://stepflow.org/blog/announcing-stepflow">Announcing
+          StepFlow</a> — Aug 2025. Co-authored with Nate McCall.
+        </li>
+      </ul>
+
+      <h4 class="subrole">RAG &amp; Knowledge Graphs</h4>
+      <ul class="projects">
+        <li>
+          <a href="https://thenewstack.io/scaling-knowledge-graphs-by-eliminating-edges/">Scaling
+          Knowledge Graphs by Eliminating Edges</a> — <em>The New Stack</em>,
+          Jul 2024.
+        </li>
+        <li>
+          <a href="https://thenewstack.io/better-llm-integration-with-content-centric-knowledge-graphs/">Better
+          LLM Integration with Content-Centric Knowledge Graphs</a> —
+          <em>The New Stack</em>, Jun 2024.
+        </li>
+        <li>
+          <a href="https://dewykb.github.io/blog/langchain-python-cli/">Building
+          a Question-Answering CLI with LangChain and Dewy</a> — Mar 2024.
+        </li>
+        <li>
+          <a href="https://dewykb.github.io/blog/extraction-matters-most/">Extraction
+          Matters Most</a> — Feb 2024. Which RAG techniques actually move the
+          needle.
+        </li>
+      </ul>
+
+      <h4 class="subrole">Kaskada</h4>
+      <ul class="projects">
+        <li>
+          <a href="https://www.youtube.com/watch?v=kmlnctoS6dg">The Next Step
+          in Event Processing</a> — talk at AICamp Seattle.
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=n_V3RYFg5Zo">Kaskada at the
+          Global Feature Store Meetup</a> — joint meetup talk with Salesforce.
+        </li>
+        <li>
+          <a href="https://kaskada.io/blog/posts/2023-11-06-four-pillars-of-realtime-ai.html">Four
+          Pillars of Real-Time Generative AI</a> — Nov 2023.
+        </li>
+        <li>
+          <a href="https://kaskada.io/blog/posts/2023-03-28-announcing-kaskada-oss.html">Announcing
+          Kaskada OSS</a> — Mar 2023.
+        </li>
+        <li>
+          <a href="https://kaskada.io/guide/">Kaskada User Guide</a> —
+          introduction to Timestreams and the Kaskada engine.
+        </li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Patents &amp; Publications</h2>
+
+      <h4 class="subrole">Patents</h4>
+      <ul class="publications">
+        <li>
+          <a href="https://patents.google.com/patent/US10732928B1">Data flow
+          windowing and triggering</a> — US10732928, 2020. With Akidau,
+          Bradshaw, C. Chambers, Lax, Mills, Perry (Beam / Dataflow).
+        </li>
+        <li>
+          <a href="https://patents.google.com/patent/US11983384B2">User
+          interface for machine learning feature engineering studio</a> —
+          US11983384, 2024 (Kaskada).
+        </li>
+        <li>
+          <a href="https://patents.google.com/patent/US20230359930A1">Coordinated
+          feature engineering system</a> — 2023 (Kaskada).
+        </li>
+        <li>
+          <a href="https://patents.google.com/patent/US20220156254A1">Feature
+          Engineering System</a> — 2022 (Kaskada).
+        </li>
+        <li>
+          <a href="https://patents.google.com/patent/US20210241146A1">Event-based
+          Feature Engineering</a> — 2022 (Kaskada).
+        </li>
+        <li>
+          <a href="https://patents.google.com/patent/US20210241171A1">Machine
+          Learning Feature Engineering</a> — 2022 (Kaskada).
+        </li>
+      </ul>
+
+      <h4 class="subrole">Academic Publications</h4>
+      <ul class="publications">
+        <li>
+          Boolean-logic-to-CNF translation for improved SAT solver
+          performance — <em>DATE</em>, 2009.
+        </li>
+        <li>
+          Static analysis over LLVM bytecode for detecting memory and
+          security errors in C/C++ — <em>VMCAI</em>, 2007.
         </li>
       </ul>
     </section>
