@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ben Chambers — Principal Software Engineer</title>
+  <meta name="description" content="Ben Chambers — Principal Software Engineer. Data infrastructure, distributed systems, and GenAI. Founded Kaskada (acquired by DataStax). Previously Google Cloud Dataflow / Apache Beam.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <h1>Ben Chambers</h1>
+      <p class="tagline">Principal Software Engineer — data infrastructure, distributed systems, GenAI</p>
+      <p class="location">Seattle, Washington</p>
+      <nav class="links" aria-label="Profiles">
+        <a href="https://www.linkedin.com/in/ben-chambers-291ba5/" rel="me noopener">LinkedIn</a>
+        <a href="https://github.com/bjchambers" rel="me noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <section id="summary">
+      <p class="summary">
+        Principal engineer with 15+ years building data infrastructure and
+        distributed systems, as both IC and tech lead. Currently at IBM building
+        open-source infrastructure for GenAI workflows. Founded Kaskada — a
+        query engine for real-time ML over event streams — and led it through
+        acquisition by DataStax. Founding PMC member of Apache Beam, where I
+        co-designed the streaming model (windowing, triggers) at Google.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="role">
+        <header>
+          <h3>IBM <span class="title">— Principal Software Engineer</span></h3>
+          <span class="dates">Aug 2025 – Present</span>
+        </header>
+        <ul>
+          <li>
+            Building <a href="https://github.com/stepflow-ai/stepflow">StepFlow</a>,
+            an open-source durable orchestrator for GenAI workflows from any
+            language or framework. Provides more efficient, distributed
+            execution of Langflow and other flow-based systems, with isolated
+            step execution via Firecracker microVMs.
+          </li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header>
+          <h3>DataStax <span class="title">— ML CTO</span></h3>
+          <span class="dates">Jan 2023 – Aug 2025</span>
+        </header>
+        <ul>
+          <li>
+            Led ML / GenAI technical direction following the Kaskada acquisition.
+          </li>
+          <li>
+            Shipped open-source projects for RAG and agentic systems:
+            <a href="https://github.com/datastax/graph-rag">graph-rag</a>
+            (vector + graph traversal over existing vector stores),
+            <a href="https://github.com/DewyKB/dewy">Dewy</a>
+            (document knowledge base / ingestion pipeline for RAG), and the
+            open-source release of Kaskada's columnar timestream engine.
+          </li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header>
+          <h3>Kaskada <span class="title">— Founder, CTO</span></h3>
+          <span class="dates">Jan 2018 – Jan 2023 · acquired by DataStax</span>
+        </header>
+        <ul>
+          <li>
+            Founded Kaskada to build temporal, columnar feature engineering for
+            real-time ML — a query engine and language purpose-built for
+            event-time reasoning over streams of events.
+          </li>
+          <li>
+            Led engineering through product, fundraising, and acquisition by
+            DataStax in 2023.
+          </li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header>
+          <h3>Google <span class="title">— Senior Software Engineer</span></h3>
+          <span class="dates">Jun 2009 – Dec 2017</span>
+        </header>
+
+        <h4 class="subrole">Google Cloud Dataflow / Apache Beam · 2015 – 2017</h4>
+        <ul>
+          <li>
+            Founding member of the Apache Beam project and its Project Management
+            Committee. Tech lead for a 5-person team surfacing pipeline execution
+            in terms of the high-level programming model.
+          </li>
+          <li>
+            Designed and implemented windowing and triggers — a core piece of
+            Beam's unified batch-and-streaming programming model.
+          </li>
+          <li>
+            Built a bytecode-generation layer for extending user-defined
+            functions with state and timers, improving performance ~10× over the
+            prior reflection-based approach.
+          </li>
+        </ul>
+
+        <h4 class="subrole">Cross Media Panels · 2013 – 2015</h4>
+        <ul>
+          <li>
+            Tech lead for Android and iOS metering applications and the backend
+            / API that ingested their data. Built dashboards for panel
+            membership and participation.
+          </li>
+        </ul>
+
+        <h4 class="subrole">DoubleClick BidManager · 2011 – 2013</h4>
+        <ul>
+          <li>
+            Scaled the reporting pipeline by moving raw-data aggregation from
+            client to server; eliminated distributed state caches by making the
+            backend fast enough not to need them.
+          </li>
+        </ul>
+
+        <h4 class="subrole">DoubleClick AdPlanner · 2009 – 2011</h4>
+        <ul>
+          <li>
+            Led a two-person team rebuilding the UI as a wizard-driven flow.
+            Contributed PrivateModule support upstream to Gin (GWT's Guice
+            equivalent) and rewrote the browser↔server RPC layer to support
+            deterministic frontend tests.
+          </li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header>
+          <h3>Northeastern University <span class="title">— Research Assistant</span></h3>
+          <span class="dates">Jan 2008 – May 2009</span>
+        </header>
+        <ul>
+          <li>
+            Implemented a new Boolean-logic-to-CNF translation (OCaml, then
+            C++ for ~10× speedup) that produced smaller CNFs and improved SAT
+            solver performance. Published at DATE 2009.
+          </li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header>
+          <h3>Diagis <span class="title">— Senior Researcher</span></h3>
+          <span class="dates">Sep 2006 – Aug 2007</span>
+        </header>
+        <ul>
+          <li>
+            Built a Haskell analysis over LLVM bytecode to detect security and
+            memory errors in C/C++. Published at VMCAI 2007.
+          </li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <header>
+          <h3>Applied Systems Intelligence <span class="title">— Junior Engineer</span></h3>
+          <span class="dates">2001 – 2006</span>
+        </header>
+        <ul>
+          <li>
+            Maintained and extended a ~100k-line cross-platform C++ library for
+            building intelligent agents; designed an agent-reasoning log and
+            viewer; prototyped a control system integrating an intelligent agent
+            with an autonomous lawn mower.
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="open-source">
+      <h2>Selected Open Source</h2>
+      <ul class="projects">
+        <li>
+          <a href="https://github.com/stepflow-ai/stepflow">StepFlow</a>
+          — open protocol and runtime (Rust + Python SDK) for durable,
+          sandboxed GenAI workflows defined in YAML/JSON, with isolated step
+          execution via Firecracker microVMs.
+        </li>
+        <li>
+          <a href="https://github.com/datastax/graph-rag">Graph RAG</a>
+          — Python library that traverses metadata relationships on top of your
+          existing vector store, combining vector similarity with graph search.
+        </li>
+        <li>
+          <a href="https://github.com/DewyKB/dewy">Dewy</a>
+          — open-source knowledge base handling parsing, chunking, summarization,
+          and semantic indexing so RAG apps can focus on agent logic.
+        </li>
+        <li>
+          <a href="https://beam.apache.org/">Apache Beam</a>
+          — founding PMC member; designed windowing/triggers and the state/timers
+          execution layer.
+        </li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="education">
+        <li>
+          <strong>Northeastern University</strong> — M.S., Computer Science
+          (Programming Languages), 2007 – 2009
+        </li>
+        <li>
+          <strong>Georgia Institute of Technology</strong> — B.S., Computer
+          Science, 2003 – 2007
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Reach me via <a href="https://www.linkedin.com/in/ben-chambers-291ba5/">LinkedIn</a>.</p>
+    </footer>
+  </main>
+</body>
+</html>
