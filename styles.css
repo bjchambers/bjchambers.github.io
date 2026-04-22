@@ -49,9 +49,26 @@ a {
 a:hover { border-bottom-color: var(--accent); }
 
 .hero {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--rule);
+}
+
+.hero-text { flex: 1; min-width: 0; }
+
+.headshot {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media (max-width: 28rem) {
+  .hero { flex-direction: column-reverse; align-items: flex-start; gap: 1rem; }
 }
 
 h1 {
