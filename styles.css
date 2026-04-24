@@ -126,9 +126,9 @@ h2 {
 }
 
 .role h3 {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   margin: 0;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .role h3 .title {
@@ -137,7 +137,8 @@ h2 {
 }
 
 .dates {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-style: italic;
   color: var(--fg-subtle);
   white-space: nowrap;
 }
