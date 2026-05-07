@@ -171,6 +171,9 @@ footer {
   color: var(--fg-subtle);
 }
 
+.link-url { display: none; }
+.resume-link { display: none; }
+
 @media print {
   :root {
     --fg: #000;
@@ -183,4 +186,12 @@ footer {
   main { max-width: none; padding: 0.5in; }
   a { border-bottom: none; }
   h2 { margin-top: 1.5rem; }
+  .link-label { display: none; }
+  .link-url { display: inline; }
+  .resume-link {
+    display: block;
+    margin: 0 0 0.4rem;
+    font-size: 0.95rem;
+    color: var(--fg-muted);
+  }
 }
