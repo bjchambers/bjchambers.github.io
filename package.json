@@ -1,0 +1,11 @@
+{
+  "name": "bjchambers-resume",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}

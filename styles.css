@@ -179,7 +179,6 @@ footer {
     --fg: #000;
     --fg-muted: #222;
     --fg-subtle: #444;
-    --accent: #000;
     --rule: #bbb;
     --bg: #fff;
   }
@@ -194,4 +193,5 @@ footer {
     font-size: 0.95rem;
     color: var(--fg-muted);
   }
+  .screen-only { display: none; }
 }
