@@ -86,12 +86,13 @@
         </header>
         <ul>
           <li>
-            Building <a href="https://github.com/stepflow-ai/stepflow">StepFlow</a>,
-            an open-source durable orchestrator for GenAI workflows from any
-            language or framework. Runs Langflow and other flow-based systems
-            ~10–20% faster on a single machine, with horizontal scaling across
-            machines and isolated step execution via Firecracker microVMs for
-            stronger security.
+            Building <a href="https://github.com/stepflow-ai/stepflow">StepFlow</a>
+            (Rust runtime, Python SDK), an open-source durable orchestrator
+            for GenAI workflows from any language or framework. Runs Langflow
+            and other flow-based systems ~10–20% faster on a single machine,
+            with horizontal scaling, isolated step execution via Firecracker
+            microVMs for stronger security, and OpenTelemetry tracing across
+            step boundaries.
           </li>
           <li>
             <strong>Writing:</strong>
@@ -117,7 +118,7 @@
             Led exploration of GenAI opportunities, including prototypes for
             RAG and agentic systems. Open-sourced
             <a href="https://github.com/datastax/graph-rag">graph-rag</a>
-            (vector + graph traversal over existing vector stores) and
+            (Python; vector + graph traversal over existing vector stores) and
             <a href="https://github.com/DewyKB/dewy">Dewy</a> (document
             knowledge base for RAG); other prototypes informed direction
             rather than shipping as products.
@@ -144,8 +145,9 @@
           <li>
             Founded Kaskada to simplify feature engineering from event-based
             data. Iteration with users drove the product from a managed
-            service with a custom DSL to an open-source Python library over
-            Rust and Apache Arrow, anchored by <strong>Timestreams</strong> —
+            service with a custom DSL to an open-source Python library
+            backed by a Rust + Apache Arrow engine (via PyO3), anchored by
+            <strong>Timestreams</strong> —
             a columnar abstraction over temporally-ordered events that
             unified historical training-data generation with real-time
             feature serving.
@@ -185,9 +187,9 @@
         <h4 class="subrole">Google Cloud Dataflow / Apache Beam · 2015 – 2017</h4>
         <ul>
           <li>
-            Founding member of the Apache Beam project and its Project Management
-            Committee. Tech lead for a 5-person team surfacing pipeline execution
-            in terms of the high-level programming model.
+            Founding PMC member of the Apache Beam project (primarily Java).
+            Tech lead for a 5-person team surfacing pipeline execution in
+            terms of the high-level programming model.
           </li>
           <li>
             Designed and implemented windowing and triggers — a core piece of
@@ -203,7 +205,7 @@
         <h4 class="subrole">Earlier at Google · 2009 – 2015</h4>
         <ul>
           <li>
-            Tech-lead roles across three teams: Cross Media Panels (2013–2015,
+            Tech-lead roles across three teams, primarily in Java: Cross Media Panels (2013–2015,
             Android/iOS metering apps and ingestion backend), DoubleClick
             BidManager (2011–2013, scaled the reporting pipeline and removed
             the need for distributed state caches by making the backend fast
@@ -238,6 +240,12 @@
           </li>
         </ul>
       </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p><strong>Languages:</strong> Rust (8 years), Python (3 years), Java (8 years but stale).</p>
+      <p><strong>Areas:</strong> distributed systems, stream-processing, query engines, ML feature engineering, GenAI workflows and agents, language / compiler design and implementation, open-source project leadership.</p>
     </section>
 
     <section id="open-source">
